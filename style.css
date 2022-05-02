@@ -138,7 +138,7 @@ div.functions > ul > li> button {
     background-color: #1992d4;
     padding: 20px;
     display: grid;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
     
 }
 
@@ -195,13 +195,18 @@ div.nav > div.nav-text {
     font-size: 20px;
 }
 div#communities.nav {
-    grid-row: 7 / 9;
-    align-items: baseline;
+    grid-row: 7 / 8;
+}
 
+div#settings.nav {
+    grid-row: 9 / 10;
+}
+
+div#support.nav {
+    grid-row: 10 / 11;
 }
 div#privacy.nav {
     grid-row: 11 / 12;
-    align-items: baseline;
 
 }
 .contents {
