@@ -138,12 +138,11 @@ div.functions > ul > li> button {
     background-color: #1992d4;
     padding: 20px;
     display: grid;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+    
 }
 
-div#settings {
-    grid-row: 8 / 10;
-}
+
 div#dashboard.icon > img {
     width: 70px;
     height: 70px;
@@ -195,7 +194,16 @@ div.nav > div.nav-text {
     font-weight: bold;
     font-size: 20px;
 }
+div#communities.nav {
+    grid-row: 7 / 9;
+    align-items: baseline;
 
+}
+div#privacy.nav {
+    grid-row: 11 / 12;
+    align-items: baseline;
+
+}
 .contents {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
