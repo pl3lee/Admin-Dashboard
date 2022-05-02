@@ -57,13 +57,14 @@ input#search-bar {
     align-items: center;
 }
 
-#header.profile-picture {
+#top-header.profile-picture {
     grid-column: 4 / 5;
     display: grid;
     justify-content: center;
+    align-items: center;
 }
 
-div.profile-picture > img {
+div#top-header.profile-picture > img {
     object-fit: cover;
     width: 100px;
 }
@@ -85,6 +86,49 @@ div.profile-picture > img {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 7fr 1fr 1fr 1fr;
+}
+
+div#bottom-header.profile-picture > img {
+    object-fit: cover;
+    width: 120px;
+}
+
+.greeting {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+div.greeting > div#hi {
+    font-size:small
+}
+
+div.greeting > div#name {
+    font-size: x-large;
+}
+
+div.greeting > div {
+    font-weight: bolder;
+}
+
+div.functions > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    list-style: none;
+}
+
+div.functions > ul > li> button {
+    height: 6vh;
+    width: 7vw;
+    background-color: #1992d4;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: calc(9px + 0.5vw);
+    border: transparent;
 }
 
 .sidebar {
