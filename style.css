@@ -222,6 +222,7 @@ div#privacy.nav {
     grid-template-rows: 2fr 2fr;
     padding: 30px;
     gap: 10px;
+    padding-right: 200px;
 }
 
 div.projects {
