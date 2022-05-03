@@ -9,7 +9,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 0.5fr 5fr;
     grid-template-rows: 1fr 4fr;
     margin: 0;
 }
@@ -160,7 +160,7 @@ div.dashboard-text-with-icon > div#dashboard {
     align-items: center;
     color: white;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
 }
 .dashboard-text-with-icon, .nav {
     display: grid;
@@ -210,6 +210,8 @@ div#support.nav {
 div#privacy.nav {
     grid-row: 11 / 12;
 }
+
+
 .contents {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -217,8 +219,9 @@ div#privacy.nav {
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5); 
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 3fr 2fr;
+    grid-template-rows: 2fr 2fr;
     padding: 30px;
+    gap: 10px;
 }
 
 div.projects {
@@ -234,7 +237,10 @@ div.announcements {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
-
+div.announcement-container {
+    display: grid;
+    justify-content: center;
+}
 div.trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -280,13 +286,17 @@ div.announcements {
     flex-direction: column;
     gap: 10px;
 }
-div.announcement-container, div.card {
+div.trending-container, div.announcement-container, div.card {
     padding: 20px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
 }
-
+ul.announcements {
+    display: grid;
+    justify-content: center;
+    padding-left: 0px;
+}
 ul.announcements > * {
     border-bottom: solid 1px #e2e8f0;
 }
@@ -302,6 +312,40 @@ ul.announcements > li > h1 {
 ul.announcements > li > p {
     height: 80px;
     overflow: auto;
+}
+
+div.trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.trending-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.trending {
+    padding: 10px;
+    display: grid;
+}
+
+ul.trending > li {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+}
+
+div.trending-person-container > div {
+    font-size: 10px;
+}
+
+div.trending-person-container > div.trending-project {
+    color: #cad1da;
 }
 
 
